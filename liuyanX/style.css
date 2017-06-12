@@ -1,0 +1,112 @@
+
+#myForm{
+	margin-top: 20px;
+	display: inline-flex;
+	flex-direction: column;
+    animation-name: formani;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+  }
+#myForm .input{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-right: 15px;
+	border-radius: 3px;
+	padding: 8px;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 0.5px;
+    border-color: #d2d0d0;
+    animation-name: ani;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+
+}
+#myForm .input:focus {
+	outline: none;
+	 
+}
+
+#myForm div{
+	display: inline-flex;
+	flex-direction: row;
+}
+#myForm  #login,#signup{
+	
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+	margin-top: 50px;
+	margin-left: 6%;
+	margin-right: 6%;
+    width: 88%;
+   	height: 40px;
+	background-color: #9E9999;
+    border-style: none;
+    animation-name: btnani;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#myForm #signup:hover{
+	background-color:#ADA8A8;
+	cursor: pointer;
+}
+#myForm  #login:hover{
+	background-color:#ADA8A8;
+	cursor: pointer;
+}
+#myForm #login,#signup:active {
+	
+ 	cursor: pointer;
+    border-style: none;
+}
+#myForm  #login,#signup:focus {
+    
+ 	cursor: pointer;
+    outline: none;
+}
+#myForm #signup{
+	margin-bottom: 20px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */  
+    color:    #BDBDBD;  
+}  
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+   color:     #BDBDBD;  
+   opacity:  1;  
+}  
+::-moz-placeholder { /* Mozilla Firefox 19+ */  
+   color:      #BDBDBD;  
+   opacity:  1;  
+}  
+:-ms-input-placeholder { /* Internet Explorer 10+ */  
+   color:      #B3B3B3;  
+} 
+@keyframes ani{
+	from{
+       opacity: 0;
+	}
+	
+	to{
+		opacity: 0.5;
+	};
+
+}
+@keyframes btnani{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 0.8;
+	};
+}
+@keyframes formani{
+	from{
+		top:0;
+	}
+	to{
+		top: 24%;
+	}
+}

@@ -1,0 +1,126 @@
+
+
+.bg {
+	background: url('bg.jpg');
+	 min-height: 100%;
+     min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+.bg-blur {
+	float: left;
+	width: 100%;
+
+    transform:scale(1.1);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation-name: blurani;
+	-webkit-filter: blur(8px);
+	-moz-filter: blur(8px);
+	
+	-o-filter: blur(8px);
+	-ms-filter: blur(8px);
+	filter: blur(8px);
+
+}
+
+.input{
+	position: fixed;
+	border-radius: 10px;
+	padding-left: 10px;
+	height: 40px;
+	font-size: 20px;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: #d2d0d0;
+	left: 518px;
+	
+	 animation-name: inputani;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+
+}
+.input:focus {
+	outline: none;
+
+}
+
+
+#go{
+	position: fixed;
+	color: white;
+	font-size: 18px;
+	border-radius: 6px;
+	margin-left: 20px;
+	height: 40px;
+	background-color: #9E9999;
+	border-style: none;
+	left: 777px;
+   
+     animation-name: btnani;
+	animation-duration: 5s;
+	animation-fill-mode: forwards;
+
+}
+#go:hover{
+	background-color:#ADA8A8;
+	cursor: pointer;
+}
+#go:active {
+	
+	cursor: pointer;
+	border-style: none;
+}
+#go:focus {
+
+	cursor: pointer;
+	outline: none;
+}
+
+
+::-webkit-input-placeholder { /* WebKit browsers */  
+	color:    #BDBDBD;  
+	font-style: italic;
+}  
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */  
+	color:     #BDBDBD; 
+	font-style: italic; 
+	opacity:  1;  
+}  
+::-moz-placeholder { /* Mozilla Firefox 19+ */  
+	color:      #BDBDBD;  
+	font-style: italic;
+	opacity:  1;  
+}  
+:-ms-input-placeholder { /* Internet Explorer 10+ */  
+	color:      #B3B3B3;  
+	font-style: italic;
+} 
+@keyframes inputani{
+	from{
+		top:0;
+		opacity: 0;
+	}
+	to{
+		top:35%;
+		opacity: 0.7;
+	}
+}
+@keyframes btnani{
+	from{
+		top:95%;
+		opacity: 0;
+	}
+	to{
+		top:35%;
+		opacity: 0.7;
+	}
+}
